@@ -129,6 +129,7 @@ p {
 
 @media screen and (max-width:800px) {
 .name{
+  display: flex;
   margin: 0 auto;
   height: 80px;
   width: 300px;
