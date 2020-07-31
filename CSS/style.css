@@ -128,14 +128,11 @@ p {
 }
 
 @media screen and (max-width:800px) {
-.name{
-  margin: 0 auto;
-  height: 30px;
+ .name{
+   margin: 0 auto;
+   height: 30px;
   width: 200px;
-}
-#name{
-  padding-bottom: 10px;
-}
+  }
 }
 
 .undergrad {
