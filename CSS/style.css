@@ -130,8 +130,8 @@ p {
 @media screen and (max-width:800px) {
  .name{
    margin: 0 auto;
-   height: 30px;
-  width: 200px;
+   height: 80px;
+  width: 350px;
   }
 }
 
@@ -256,8 +256,8 @@ width: 50px;
   }
 
 .interests{
-  margin-right: 80px;
-margin-left: 80px;
+  margin-right: 50px;
+margin-left: 50px;
 }
 
 .interests .card-body{
