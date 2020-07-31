@@ -130,7 +130,7 @@ p {
 @media screen and (max-width:800px) {
  .name{
    margin: 0 auto;
-   height: 80px;
+   height: 60px;
   width: 350px;
   }
 }
