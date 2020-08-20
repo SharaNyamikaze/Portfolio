@@ -83,12 +83,11 @@ p {
 }
 
 .nav-toggle-button {
-  background-color: #faf4ff;
+  background-color: #8566aa;
 }
 
-.navbar-toggler-icon {
-  background-color: #522d5b;
-  width: 3px;
+.fa-bars {
+  color: #faf4ff;
 }
 
 .navbar-custom .nav-item.active .nav-link,
