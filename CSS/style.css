@@ -77,6 +77,13 @@ p {
   color: #522d5b;
 }
 
+@media screen and (max-width:800px){
+.navbar-brand {
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+}
+
 .nav-link {
   color: #faf4ff;
   font-family: sans-serif;
