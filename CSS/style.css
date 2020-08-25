@@ -70,7 +70,7 @@ p {
 .navbar-brand {
   color: #faf4ff;
   font-family: 'Dancing Script', cursive;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 .navbar-brand:hover {
