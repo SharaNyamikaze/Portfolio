@@ -80,7 +80,7 @@ p {
 @media screen and (max-width:800px){
 .navbar-brand {
   margin: 0 auto;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 }
 
