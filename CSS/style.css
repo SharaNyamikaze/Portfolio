@@ -69,8 +69,8 @@ p {
 
 .navbar-brand {
   color: #faf4ff;
-  font-family: 'Source Serif Pro', serif;
-  letter-spacing: 2px;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
 }
 
 .navbar-brand:hover {
@@ -80,7 +80,7 @@ p {
 @media screen and (max-width:800px){
 .navbar-brand {
   margin: 0 auto;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 }
 
