@@ -83,6 +83,13 @@ p {
   padding-left: 50px;
 }
 
+@media screen and (max-width:800px){
+  .navbar-custom {
+    padding: 0;
+  }
+}
+
+
 .navbar-brand {
   color: #faf4ff;
   font-family: 'Dancing Script', cursive;
