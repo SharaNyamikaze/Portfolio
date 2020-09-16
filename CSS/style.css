@@ -79,6 +79,8 @@ p {
 
 .navbar-custom {
   background-color: #8566aa;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .navbar-brand {
@@ -325,12 +327,8 @@ padding: 3% 7%;
   margin: 5% 7%;
 }
 
-.we-title{
-  color: #8566aa;
-}
-
 .we-title:hover{
-  color: #522d5b;
+  color: #8566aa;
 }
 
 .pwe{
@@ -367,7 +365,7 @@ padding: 3% 7%;
 }
 
 .carousel-item{
-  padding: 0 20% 2% 20%;
+  padding: 0 10% 2% 10%;
   height: 430px
 
 }
@@ -447,7 +445,6 @@ padding: 3% 7%;
 
 .bottom-container {
   background-color:  #8566aa;
-padding: 10px 0 10px;
 }
 
 .copyright{
