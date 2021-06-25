@@ -338,10 +338,12 @@ padding: 3% 7%;
   color: #8566aa;
 }
 
-.pwe{
-  text-align: left;
-  line-height: 1.5;
-  padding: 2% 2%;
+.pwe {
+  text-align: justify;
+  line-height: 1.6;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: #522d5b;
 }
 
 @media screen and (max-width:800px){
