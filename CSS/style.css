@@ -14,7 +14,7 @@ h1, h2 {
   color: #8566aa;
 }
 
-@media screen and (max-width:1140px){
+@media screen and (max-width:1200px){
   h1, h2{
     font-size: 2rem;
   }
@@ -24,7 +24,7 @@ h1, h2 {
   padding: 3% 15% 5% 15%;
 }
 
-@media screen and (max-width:1140px){
+@media screen and (max-width:1200px){
   section{
     margin: 0;
   }
@@ -83,7 +83,7 @@ p {
   padding-left: 50px;
 }
 
-@media screen and (max-width:1140px){
+@media screen and (max-width:1200px){
   .nav-icon {
     padding-left: 30px;
   }
@@ -100,7 +100,7 @@ p {
   color: #522d5b;
 }
 
-@media screen and (max-width:1140px){
+@media screen and (max-width:1200px){
 .navbar-brand {
   margin: 0 auto;
   font-size: 1.3rem;
@@ -152,7 +152,7 @@ p {
   border-radius: 200px;
 }
 
-@media screen and (max-width:1140px) {
+@media screen and (max-width:1200px) {
 .profile-pic{
   margin: 0 auto;
   height: 200px;
@@ -171,7 +171,7 @@ p {
   margin-right: 200px;
 }
 
-@media screen and (max-width:1140px) {
+@media screen and (max-width:1200px) {
  .name{
    margin: 0 auto;
    height: 60px;
@@ -186,7 +186,7 @@ p {
     margin-right: 200px;
 }
 
-@media screen and (max-width:1140px) {
+@media screen and (max-width:1200px) {
 .undergrad{
   margin: 0 auto;
 }
@@ -234,7 +234,7 @@ margin: 3% 3% 3% 0;
   text-align: justify;
 }
 
-@media screen and (max-width:1140px){
+@media screen and (max-width:1200px){
 .p-about {
   line-height: 1.5;
 }
@@ -273,7 +273,7 @@ padding: 3% 7%;
   color: #522d5b;
 }
 
-@media screen and (max-width:1140px){
+@media screen and (max-width:1200px){
   #work-exp{
     padding-left: 0;
     padding-right: 0;
@@ -312,7 +312,7 @@ padding: 3% 7%;
 
 }
 
-@media screen and (max-width:1140px){
+@media screen and (max-width:1200px){
 #skills{
   padding-left: 0;
   padding-right: 0;
@@ -352,7 +352,7 @@ padding: 3% 7%;
   text-align: justify;
 }
 
-@media screen and (max-width:1140px){
+@media screen and (max-width:1200px){
   #projects{
     padding-left: 0;
     padding-right: 0;
