@@ -1,464 +1,699 @@
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  text-align: center;
-}
-
-/* Misc elements */
-
-h1, h2 {
-  font-family: 'Open Sans', sans-serif;
-  color: #8566aa;
-}
-
-@media screen and (max-width:800px){
-  h1, h2{
-    font-size: 2rem;
-  }
-}
-
-.sec-title{
-  padding: 3% 15% 5% 15%;
-}
-
-@media screen and (max-width:800px){
-  section{
-    margin: 0;
-  }
-}
-
-h3, h4, h5, h6{
-  font-family: 'Lato', sans-serif;
-  color: #522d5b;
-}
-
-p {
-  font-family: 'Crimson Text', serif;
-  font-size: 120%;
-  font-weight: 500;
-  line-height: 2;
-}
-
-.arrow-down {
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid #3b2e5a;
-  margin: 0 auto;
-  border-bottom-width: 200px;
-  border-top-width: 40px;
-  border-left-width: 40px;
-  border-right-width: 40px
-}
-
-.divider {
-  border-top-color: #888;
-  border-style: dotted none none;
-  border-width: 5px;
-  width: 5%;
-  margin: 10px auto 10px auto;
-  padding-bottom: 25px;
-}
-
-.fa-chevron-up {
-  color: #8566aa;
-  margin-right: 100px;
-}
-
-@media (max-width:800px) {
-  .fa-chevron-up {
-    margin: 0 auto;
-  }
-}
-
-/* Navigation Bar */
-
-.navbar-custom {
-  background-color: #8566aa;
-  padding-right: 50px;
-  padding-left: 50px;
-}
-
-@media screen and (max-width:800px){
-  .nav-icon {
-    padding-left: 30px;
-  }
-}
-
-
-.navbar-brand {
-  color: #faf4ff;
-  font-family: 'Dancing Script', cursive;
-  letter-spacing: 1.5px;
-}
-
-.navbar-brand:hover {
-  color: #522d5b;
-}
-
-@media screen and (max-width:800px){
-.navbar-brand {
-  margin: 0 auto;
-  font-size: 1.3rem;
-}
-}
-
-.nav-link {
-  color: #faf4ff;
-  font-family: sans-serif;
-}
-
-.nav-toggle-button {
-  background-color: #8566aa;
-}
-
-.fa-bars {
-  color: #faf4ff;
-}
-
-.navbar-custom .nav-item.active .nav-link,
-.navbar-custom .nav-item:focus .nav-link,
-.navbar-custom .nav-item:hover .nav-link {
-  color: #522d5b;
-}
-
-/* Name and DP */
-
-#nameDp {
-  display: table;
-  margin: 0;
-  max-width: none;
-  background-color: #373B44;
-  background-image: url("https://assets.sutori.com/user-uploads/image/d01c8517-d941-4556-82f1-de095605ef73/91a9baee77a63520edb1f960c766a02c.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#nameDp:nth-of-type(2n) {
-  background-color: #FE4B74;
-  background-image: url("https://assets.sutori.com/user-uploads/image/d01c8517-d941-4556-82f1-de095605ef73/91a9baee77a63520edb1f960c766a02c.gif");
-}
-
-.profile-pic {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 350px;
-  height: 250px;
-  width: 250px;
-  border-radius: 200px;
-}
-
-@media screen and (max-width:800px) {
-.profile-pic{
-  margin: 0 auto;
-  height: 200px;
-  width: 200px;
-}
-}
-
-.profile-pic:hover {
-  -moz-box-shadow: 0 0 10px #522d5b;
-  -webkit-box-shadow: 0 0 10px #522d5b;
-  box-shadow: 0 0 10px #522d5b;
-}
-
-.name{
-  margin-top: 30px;
-  margin-right: 200px;
-}
-
-@media screen and (max-width:800px) {
- .name{
-   margin: 0 auto;
-   height: 60px;
-  width: 350px;
-  }
-}
-
-.undergrad {
-  height: 30px;
-  width: 200px;
-  margin-top: 20px;
-    margin-right: 200px;
-}
-
-@media screen and (max-width:800px) {
-.undergrad{
-  margin: 0 auto;
-}
-
-#undergrad{
-  padding-top: 10px;
-  padding-bottom: 40px;
-}
-}
-
-.contact-icon {
-   display: inline-flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: center;
-   list-style: none;
-   padding: 3% 15%;
-   margin: 0;
-}
-
-.contact{
-  padding: 20px;
-  font-size: 2rem;
-  color: #b590ca;
-}
-
-.contact:hover {
-  color: #522d5b;
-}
-
-/* Biography */
-
-#biography{
-  padding: 5% 5%;
-}
-
-.about-me-icon{
-height: 70px;
-width: 70px;
-float: left;
-margin: 3% 3% 3% 0;
-}
-
-.p-about {
-  text-align: justify;
-}
-
-@media screen and (max-width:800px){
-.p-about {
-  line-height: 1.5;
-}
-
-.about-me-icon{
-height: 50px;
-width: 50px;
-}
-}
-
-/* Interests */
-
-#interests{
-    padding: 5% 10%;
-}
-
-.interests{
-  margin: 5% 7%;
-  border-radius: 50px;
-}
-
-.card-img-top{
-  border-radius: 50px;
-  height: 200px;
-}
-
-.card-img-top:hover {
-  -moz-box-shadow: 0 0 30px #522d5b;
-  -webkit-box-shadow: 0 0 30px #522d5b;
-  box-shadow: 0 0 30px #522d5b;
-}
-
-.card:hover {
-  -moz-box-shadow: 0 0 10px #522d5b;
-  -webkit-box-shadow: 0 0 10px #522d5b;
-  box-shadow: 0 0 10px #522d5b;
-  transition: 0.3s;
-}
-
-.int-txt{
-  text-align: left;
-  line-height: 1.5
-}
-
-.btn-int{
-  background-color: #faf4ff;
-  color: #8566aa;
-  width: 12rem;
-  height: 2rem;
-  border-radius: 50px;
-    border-color: #522d5b;
-}
-
-.btn-int:hover{
-  border-color: #8566aa;
-  color: #faf4ff;
-  background: #8566aa;
-}
-
-@media screen and (max-width:800px){
-  .card-img-top{
-    height: 150px;
-  }
-
-.interests{
-  margin-right: 50px;
-margin-left: 50px;
-}
-
-.interests .card-body{
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.btn-int{
-  width: 10rem;
-}
-
-.int-title{
-width: 140px;
-}
-}
-
-/* Work Experience */
-
-#work-exp {
-padding: 3% 7%;
-}
-
-.work-exp {
-  height: 80px;
-  width: 80px;
-  margin-bottom: 30px;
-}
-
-.card-we{
-  margin: 5% 7%;
-}
-
-.we-title:hover{
-  color: #8566aa;
-}
-
-.pwe {
-  text-align: justify;
-  line-height: 1.6;
-  padding-left: 40px;
-  padding-right: 40px;
-  color: #522d5b;
-}
-
-@media screen and (max-width:800px){
-  #work-exp{
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .pwe{
-    font-size: 1rem;
-  }
-}
-
-/* Skill */
-
-#skills{
-  padding: 3% 10%;
-}
-
-#carousel-skills{
-  margin: 0 150px;
-}
-
-.skill-item{
-  width: 100px;
-  height: 100px;
-  text-align: center;
-}
-
-.carousel-item{
-  padding: 0 10% 2% 10%;
-  height: 430px
-
-}
-
-.skill-title{
-  padding-top: 3%;
-  margin-bottom: 20px;
-
-}
-
-@media screen and (max-width:800px){
-#skills{
-  padding-left: 0;
-  padding-right: 0;
-}
-
-#carousel-skills{
-  margin: 0;
-}
-
-.skill-item{
-  width: 60px;
-  height: 60px;
-}
-
-.p-skill{
-  font-size: 1rem;
-  line-height: 1.5;
-  text-align: justify;
-}
-}
-
-/* Projects */
-
-#projects{
-  padding: 7% 7%;
-}
-
-.project-title{
-  color: #522d5b;
-}
-
-.project-title:hover{
-  color:  #8566aa;
-}
-
-.project-body{
-  text-align: justify;
-}
-
-@media screen and (max-width:800px){
-  #projects{
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-/* Contacts */
-
-.home-section {
-    background-color: #faf4ff;
-    padding: 110px 0 110px 0;
-    animation: intro 0.3s both;
-    animation-delay: 0.15s;
-  }
-
-  .fa-li{
-    color: #b590ca;
-    top: 0;
-    padding-top: 10px;
-  }
-
-.contact-element{
-  text-align: left;
-}
-
-
-.bottom-container {
-  background-color:  #8566aa;
-  padding: 10px 0;
-}
-
-.copyright{
-  color: #fff;
-  font-size: 1rem;
-  opacity: 0.3
-}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sharanya Nath</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="icon" href="CSS/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Dancing+Script:wght@600&family=Lato:wght@700&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/471d3845e8.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+
+  <div class="container-fluid">
+
+    <nav class="navbar fixed-top bg-custom navbar-expand-lg navbar-custom">
+      <img class="nav-icon" src="CSS/favicon.ico" alt="icon" style="float: left; padding-right: 10px;">
+      <a class="navbar-brand" href="">Sharanya Nath</a>
+      <button class="navbar-toggler nav-toggle-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ol class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#biography" data-target="#biography">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#interests" data-target="#interests">Interests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work-exp" data-target="#work-exp">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills" data-target="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" data-target="#contacts">Contact</a>
+          </li>
+        </ol>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Name and DP -->
+
+  <section style="background-color: #faf4ff; margin-top: 55px;">
+    <div id="nameDp" class="container-fluid">
+      <div class="row">
+        <div class="col-md-5 col-12" style="margin-top: 50px;">
+          <div id="profile-pic">
+            <img class="profile-pic" src="images/nath.png" alt="Sharanya Nath">
+          </div>
+        </div>
+        <div class="col-md-7 col-12" style="margin-top: 50px;">
+          <div class="nam-und" style="padding-top: 5%">
+            <div id="name">
+              <img class="name" src="images/sharanya.png" alt="">
+            </div>
+            <div id="undergrad">
+              <img class="undergrad" src="images/forensic-undergrad.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" style="margin-bottom: 50px;">
+          <ul class="contact-icon">
+            <li>
+              <a class="contact" href="mailto:48sharanya84@gmail.com"><i class="fas fa-envelope-square"></i></a>
+            </li>
+            <li>
+              <a class="contact" href="https://www.linkedin.com/in/48sharanya-nath84/"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a class="contact" href="https://orcid.org/0000-0002-8785-8530"><i class="fab fa-orcid"></i></a>
+            </li>
+            <li>
+              <a class="contact" href="https://drive.google.com/file/d/1tmQaDNN6gYKdiY4Fq0l9eubUeTakWL4p/view?usp=sharing"><i class="fas fa-file-pdf"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="arrow-down"></div>
+
+  <!-- Biography -->
+
+  <section id="biography">
+
+    <div class="text-center">
+      <h1 class="sec-title">About me</h1>
+    </div>
+
+    <div class="container-fluid about-me">
+
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+
+          <img class="about-me-icon" src="images\about-me-icon.png" alt="">
+          <p class="p-about">
+            An undergraduate with an Honours degree in Forensic Science from Amity Institute of Forensic Sciences. Trying to make a substantial change in the field of Forensics through research and innovation.
+            Looking to expand new skills and pursue professional development within the fields of Genetics, Toxicology, Pharmacology and Analytical sciences.
+            <br>Offering excellent communication and organizational abilities. Known for efficiency, best-in-class time management and leadership skills. Considered to be responsible, enthusiastic and quick learner, exceptionally well organized and
+            highly motivated who loves to read.
+            <br>Certified in <b>Green Belt-Lean Six Sigma</b> and <b>Risk Management-ISO 31000</b>
+          </p>
+          <br>
+          <hr class="my-3 divider">
+
+          <h3 class="text-center">What I can do</h3>
+
+          <img class="about-me-icon" src="images\forensics.png" alt="">
+          <p class="p-about">
+            I take pleasure in learning and comprehending new systems and methods, and have a keen interest in analyzing and finding results to unsolved questions. Drawing on the principles of biology, chemistry, physics and maths, I can use it to
+            analyse and examine various types of physical evidences found at the scene of a crime. Furthermore, analysing and preparing traces of evidence that can be used by the prosecution or defence in both criminal and civil investigations in
+            order to exclude or associate someone with a particular criminal act.
+            <br>
+            I am constantly trying to expand my field of expertise and gain new skills. Was hired by <a href="https://internshala.com/about_us"><b>Internshala</b></a> as a <b>Community Manager</b> intern which helped me work in management sector. I have also been honing my IT skills and thus, been learning <b>Web Development</b>.
+          </p>
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+
+          <h3 class="text-center">Education</h3>
+
+          <div class="row experience">
+
+            <div class="col-auto text-center flex-column d-none d-sm-flex">
+              <div class="row h-50">
+                <div class="col border-right">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+              <div class="m-2">
+                <span class="badge badge-pill border ">&nbsp;</span>
+              </div>
+              <div class="row h-50">
+                <div class="col border-right">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+            </div>
+
+            <div class="col py-2">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title exp-title text-muted mt-0 mb-1">Master of Research (MRes) Medical Genetics</h4>
+                  <h5 class="card-title exp-company text-muted my-0"><a href="https://www.ncl.ac.uk/postgraduate/degrees/4827f/" target="_blank" rel="noopener">FMS Graduate School, Newcastle University</a></h5>
+                  <div class="text-muted exp-meta">
+                    Sep 2021 –
+
+                    Sep 2022
+
+
+                    <span class="middot-divider"></span>
+                    <span>Newcastle upon Tyne, UK</span>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row experience">
+
+            <div class="col-auto text-center flex-column d-none d-sm-flex">
+              <div class="row h-50">
+                <div class="col border-right">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+              <div class="m-2">
+                <span class="badge badge-pill border ">&nbsp;</span>
+              </div>
+              <div class="row h-50">
+                <div class="col border-right">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+            </div>
+
+            <div class="col py-2">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title exp-title text-muted mt-0 mb-1">PG Certification in Forensic Biotechnology and DNA Fingerprinting</h4>
+                  <h5 class="card-title exp-company text-muted my-0"><a href="https://www.ifsedu.in/" target="_blank" rel="noopener">International Forensic Science Institute</a></h5>
+                  <div class="text-muted exp-meta">
+                    Aug 2020 –
+
+                    Aug 2021
+
+
+                    <span class="middot-divider"></span>
+                    <span>Dhankawadi, Pune(Maharashtra)</span>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row experience">
+
+            <div class="col-auto text-center flex-column d-none d-sm-flex">
+              <div class="row h-50">
+                <div class="col border-right">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+              <div class="m-2">
+                <span class="badge badge-pill border ">&nbsp;</span>
+              </div>
+              <div class="row h-50">
+                <div class="col border-right">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+            </div>
+
+            <div class="col py-2">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title exp-title text-muted mt-0 mb-1">Bachelor of Science (Honours) in Forensic Science</h4>
+                  <h5 class="card-title exp-company text-muted my-0"><a href="https://www.amity.edu/aifs/default.asp" target="_blank" rel="noopener">Amity Institute of Forensic Sciences</a></h5>
+                  <div class="text-muted exp-meta">
+                    Jul 2017 –
+
+                    Jun 2020
+
+
+                    <span class="middot-divider"></span>
+                    <span>Amity University, Noida</span>
+
+                  </div>
+                  <div class="card-text">Overall CGPA: 8.61/10</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="text-center" style="padding-top: 50px;">Certifications</h3>
+
+          <div class="row experience">
+
+            <div class="col-auto text-center flex-column d-none d-sm-flex">
+              <div class="row h-50">
+                <div class="col border-right">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+              <div class="m-2">
+                <span class="badge badge-pill border ">&nbsp;</span>
+              </div>
+              <div class="row h-50">
+                <div class="col border-right">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+            </div>
+
+            <div class="col py-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title exp-title text-muted mt-0 mb-1">Lean Six sigma Green Belt</h5>
+                  <h6 class="card-title exp-company text-muted my-0"><a href="https://www.bsigroup.com/en-IN/Six-Sigma/Training-courses-for-Six-Sigma/lean-six-sigma-green-belt-training-course/" target="_blank" rel="noopener">British Standards
+                      Institutions(bsi)</a></h6>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row experience">
+
+            <div class="col-auto text-center flex-column d-none d-sm-flex">
+              <div class="row h-50">
+                <div class="col border-right">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+              <div class="m-2">
+                <span class="badge badge-pill border ">&nbsp;</span>
+              </div>
+              <div class="row h-50">
+                <div class="col border-right">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+            </div>
+
+            <div class="col py-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title exp-title text-muted mt-0 mb-1">ISO 31000 Risk Management Systems</h5>
+                  <h6 class="card-title exp-company text-muted my-0"><a href="https://www.bsigroup.com/en-IN/ISO-31000-Risk-Management/" target="_blank" rel="noopener">British Standards Institutions(bsi)</a></h6>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row experience">
+
+            <div class="col-auto text-center flex-column d-none d-sm-flex">
+              <div class="row h-50">
+                <div class="col border-right">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+              <div class="m-2">
+                <span class="badge badge-pill border ">&nbsp;</span>
+              </div>
+              <div class="row h-50">
+                <div class="col border-right">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+            </div>
+
+            <div class="col py-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title exp-title text-muted mt-0 mb-1">The Complete 2020 Web Development Bootcamp</h5>
+                  <h6 class="card-title exp-company text-muted my-0"><a href="https://www.udemy.com/" target="_blank" rel="noopener">Udemy</a></h6>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row experience">
+
+            <div class="col-auto text-center flex-column d-none d-sm-flex">
+              <div class="row h-50">
+                <div class="col border-right">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+              <div class="m-2">
+                <span class="badge badge-pill border ">&nbsp;</span>
+              </div>
+              <div class="row h-50">
+                <div class="col ">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+            </div>
+
+            <div class="col py-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title exp-title text-muted mt-0 mb-1">Bacterial Genomes (I, II, III)</h5>
+                  <h6 class="card-title exp-company text-muted my-0"><a href="https://www.dhs.gov/" target="_blank" rel="noopener">Wellcome Genome Campus</a></h6>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row experience">
+
+            <div class="col-auto text-center flex-column d-none d-sm-flex">
+              <div class="row h-50">
+                <div class="col border-right">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+              <div class="m-2">
+                <span class="badge badge-pill border ">&nbsp;</span>
+              </div>
+              <div class="row h-50">
+                <div class="col border-right">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+            </div>
+
+            <div class="col py-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title exp-title text-muted mt-0 mb-1">The Fundamentals of Digital Marketing</h5>
+                  <h6 class="card-title exp-company text-muted my-0"><a href="https://learndigital.withgoogle.com/digitalunlocked/course/digital-marketing" target="_blank" rel="noopener">Google Digital Unlocked</a></h6>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row experience">
+
+            <div class="col-auto text-center flex-column d-none d-sm-flex">
+              <div class="row h-50">
+                <div class="col border-right">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+              <div class="m-2">
+                <span class="badge badge-pill border ">&nbsp;</span>
+              </div>
+              <div class="row h-50">
+                <div class="col ">&nbsp;</div>
+                <div class="col">&nbsp;</div>
+              </div>
+            </div>
+
+            <div class="col py-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title exp-title text-muted mt-0 mb-1">Cyber Supply Chain Management</h5>
+                  <h6 class="card-title exp-company text-muted my-0"><a href="https://www.dhs.gov/" target="_blank" rel="noopener">US Department of Homeland Security</a></h6>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+  </section>
+
+
+  <!-- Work Experience -->
+
+  <section id="work-exp">
+
+    <div class="container-fluid" style="margin-top: 50px;">
+      <div class="row">
+
+        <div class="col-md-4 col-sm-12">
+          <h1 class="sec-title">Work experience</h1>
+          <img class="work-exp" src="images/chemistry.png" alt="">
+        </div>
+
+        <div class="col-md-8 col-sm-12">
+
+          <div class="card border border-dark card-we">
+            <div class="card-header">
+              <h4><a class="we-title" href="https://internshala.com/about_us">Internshala</a></h4>
+              <h5><a class="we-title" href="https://drive.google.com/drive/folders/17JSByL_8q05hLo-VOTrUP6P1Fanqh6e-?usp=sharing"><i>Community Admin Manager</i></a></h5>
+              <h6>Oct '20 - May '21</h6>
+            </div>
+            <div class="card-body pwe">
+              <p class="pwe">Worked on Internshala’s flagship campus ambassador program - Internshala Student Partner (ISP). Was majorly responsible for all the administrative work.</p>
+              <ul style="text-align: justify; padding-left: 15px;">
+                <li>Number crunching and preparing the ISP edition scorecard (based on the performance in the contests (online and offline) using Excel sheet.</li>
+                <li>Launched and made the monthly scorecard datasets live (in CSV format) on the ISP dashboard.</li>
+                <li>Extracted and uploaded large number of data from MySQL (in CSV), then sanitized the same using Advanced Excel.</li>
+                <li>Prepared regular payments sheet and handled nearly 3 editions of the program (a total of 60 lacs+ ISPs)and processed rewards worth Rs. 20 lacs.</li>
+                <li>Did a monthly Cost per aquisition (CPA) analysis and kept tabs on budget requirement for every ISP edition.</li>
+                <li>Assisted on contests and campaigns ideation and reduced the exit formalities (payments processing, final scorecard launch, certificates and in-kind rewards processing) time from 15 days to 3-4 days.</li>
+                <li>Created and processed e-certificates for every ISP contests using HTML and CSS through Internshala's certificate tool.</li>
+                <li>Regularly communicated and co-ordinated with respective vendors for dispatch of Amazon e-gift cards and Intershala T-shirts.</li>
+                <li>Assisted ISPs while they performed in contests by sending out regular email campaigns using Emailer (IS Email tool) and responed to their queries using ISP suppord id.</li>
+              </ul>
+            </div>
+          </div>
+
+          <hr class="my-3 divider">
+
+          <div class="card border border-dark card-we">
+            <div class="card-header">
+              <h4><a class="we-title" href="http://www.wbfsl.gov.in/">State Forensic Science Lab, Kolkata</a></h4>
+              <h5><a class="we-title" href="https://drive.google.com/file/d/1LmKL9lTFdwRWH0I1rZWvbv86alOqTLNm/view?usp=sharing"><i>Summer Intern</i></a></h5>
+              <h6>May 19- Jun 19</h6>
+            </div>
+            <div class="card-body pwe">
+              <ul style="text-align: justify; padding-left: 15px;">
+                <li>Analyzed presence of Tetrahydrocannabinol(THC) and its percentage in the questioned Cannabis sample using GC-MS.</li>
+                <li>Achieved successful examination of viscera sample for poisons of vegetable origin, inorganic salts and acids.</li>
+                <li>Determination of pesticides in postmortem blood and bone marrow of diseased.</li>
+                <li>Gave technical assistance to the investigating officers to recognize appropriate evidence materials at the scene of crime.</li>
+              </ul>
+            </div>
+          </div>
+
+          <hr class="my-3 divider">
+
+          <div class="card border border-dark card-we">
+            <div class="card-header">
+              <h4><a class="we-title" href="https://uppolice.gov.in/pages/en/topmenu/police-units/technical-services-(ts)/about-us/en-forensic-laboratory">State Forensic Science Lab, Lucknow</a></h4>
+              <h5><a class="we-title" href="https://drive.google.com/file/d/1RlSoL4wNAf0SoFAVDTgsoOUKaPwAhSAf/view?usp=sharing"><i>Forensic Intern</i></a></h5>
+              <h6>Dec 18- Jan 19</h6>
+            </div>
+            <div class="card-body pwe">
+              <ul style="text-align: justify; padding-left: 15px;">
+                <li>Carried out histological examination of tissues of human or animal origin for determination of origin, age, sex, stature.</li>
+                <li>Determined sex and blood groups by Barr body examination and enzyme grouping on blood stains.</li>
+                <li>Conducted quality assurance on site and lab procedures, internal audits and evidence evaluation.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Skills -->
+
+  <section id="skills" style="background-color:#faf4ff;">
+
+    <h1 class="sec-title">Skills</h1>
+
+    <div id="carousel-skills" class="carousel slide" data-ride="carousel" data-interval="2000" data-pause="hover" data-touch="true">
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="images/inst-biology.png" class=" skill-item" alt="instrumentation-biology">
+          <h3 class="skill-title"><u>Instrumentation-Biological</u></h3>
+          <p class="p-skill">Density gradient centrifugation, Gel immuno-diffusion, Immuno-electrophoresis, Radio Immuno Assay, ELISA, Fluorescence immuno assay, Low voltage & High voltage electrophoresis, SDS-PAGE, Southern blotting, PCR, VNTR and
+            RFLP, STRs and Genotyping.</p>
+        </div>
+        <div class="carousel-item">
+          <img src="images/inst-chemical.png" class=" skill-item" alt="instrumentation-chemical">
+          <h3 class="skill-title"><u>Instrumentation-Chemical</u></h3>
+          <p class="p-skill">Paper chromatography, Thin layer chromatography, High performance liquid chromatography, HPTLC, Gas chromatography, GLC, UV Visible Spectrophotometry, Mass Spectrometry, Ionization techniques</p>
+        </div>
+        <div class="carousel-item">
+          <img src="images/inst-physics.png" class=" skill-item" alt="instrumentation-physical">
+          <h3 class="skill-title"><u>Instrumentation-Physical</u></h3>
+          <p class="p-skill">Analysis of Electromagnetic spectrum, Visible spectrophotometry, Atomic absorption spectrometry, Infrared spectrophotometry, Dispersive and Fourier Transform spectrophotometry, X-ray absorption, Fluorescence and X-ray
+            diffraction techniques</p>
+        </div>
+        <div class="carousel-item">
+          <img src="images/miscellaneous.png" class=" skill-item" alt="miscellaneous">
+          <h3 class="skill-title"><u>Miscellaneous</u></h3>
+          <p class="p-skill">HTML5, CSS3, Bootstrap, Javascript, jQuery, Digital Marketing, SEM, SEO, CRM, Statistics,  Data Analysis, SQL, MS Powerpoint, MS Excel, Six Sigma, Risk Management, Quality Management, Reasoning and Problem solving Skills, Content evaluation and report writing, Time Management, Leadership</p>
+        </div>
+
+      </div>
+
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active " style="background-color: #8566aa;
+        height: 10px;"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1" style="background-color: #8566aa;
+        height: 10px;"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2" style="background-color: #8566aa;
+        height: 10px;"></li>
+      </ol>
+
+    </div>
+
+  </section>
+
+  <!-- Projects -->
+
+  <section id="projects">
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-md-4 col-sm-12">
+          <h1 class="sec-title">Projects</h1>
+          <img class="work-exp" src="images/project.png" alt="">
+        </div>
+
+        <div class="col-md-8 col-sm-12">
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left project-title" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <b>Pharmacological and Toxicological assessment of common Plant Poisons in India</b><i class="fas fa-chevron-down fa-2x" style="float: right; font-size: 1.5rem;"></i>
+                    <br>
+                    Jan 2020 – Mar 2020
+                  </button>
+                  </>
+              </div>
+
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body project-body">
+                  Every year thousand of people die due to wrong dosage of medicines or improper consumption of unknown plants and herbs. Studied the impact of six most common plant poisons which has both Pharmacological and Toxicological aspects to
+                  their use. A literatue review on the active protein of each plant and how it has been used. The results of studies have shown that some active ingredients of medicinal plants are useful for pain relief; findings have also shown that
+                  some medicinal herbs have antioxidant and anti-inflammatory effects in vitro. Some medicinal plants are intrinsically toxic by virtue of their constituents and can cause adverse reactions if inappropriately used. Other factors such
+                  as herb-drug interactions, lack of adherence to good manufacturing practice, poor regulatory measures and adulteration may also lead to adverse events in their use. Toxicity depends not only on the dose of the substance but also on
+                  the toxic properties of the substance. The relationship between these two factors is important in the assessment of therapeutic dosage in pharmacology and herbalism.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed project-title" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <b>Toxicology of Snake Bite</b><i class="fas fa-chevron-down fa-2x" style="float: right; font-size: 1.5rem;"></i>
+                    <br>
+                    May 2019 – Jun 2019
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body project-body">
+                  Studied about various poisonous snakes, their morphology and their nature. With respect to region their characteristic changes and thus changes their attacking pattern and with the help of these details studied the various symptoms
+                  the venom of such snakes had on human beings. Snake bite is considered a typical and frequently obliterating ecological and occupational ailment, particularly in rustic regions of tropical areas in developing countries. Its general
+                  well being significance has been to a great extent overlooked by therapeutic science. Snake venoms are wealthy in toxins of proteins and peptides that have particularity for a wide scope of tissue receptors, making them clinically
+                  testing and deductively captivating, particularly for designing of various drugs.
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed project-title" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <b>Crime scene investigation: Analysis of Blood samples</b><i class="fas fa-chevron-down fa-2x" style="float: right; font-size: 1.5rem;"></i>
+                      <br>
+                      May 2018 – Jun 2018
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body project-body">
+                    Analysis of various blood samples found in a crime scene for species origin test and blood grouping to find out the suspects. The analysis of the provided samples were done by both Presumptive(Colour tests) and Confirmatory
+                    tests(Crystal tests). In forensic use, a presumptive test indicating the possible presence of blood is an invaluable tool. This type of test has particular value in screening out samples that are definitely not blood and do not
+                    require further testing. Used in this manner, a test should be sensitive to some component of blood which remains even after the blood has dried, aged, or become diluted. This ideal test should also be specific. These tests are
+                    those which ‘confirms’ the prescence of blood positively. To find out the presence of blood, crystal tests are regarded as the confirmatory tests. It has smaller risk of false positive tests but is more costly.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+  </section>
+
+  <!-- Contact -->
+
+  <section id="contact" class="home-section wg-contact   ">
+    <div class="container">
+
+      <div class="row contact-widget">
+
+        <div class="col-12 col-lg-4 section-heading">
+          <h1 class="sec-title">Contact</h1>
+        </div>
+
+        <div class="col-12 col-lg-8">
+
+          <div class="mb-3">
+            <form name="contact" method="POST" action="https://formspree.io/xzbjybjq">
+              <div class="form-group form-inline">
+                <label class="sr-only" for="inputName">Name</label>
+                <input type="text" name="name" class="form-control w-100" id="inputName" placeholder="Name" required="">
+              </div>
+              <div class="form-group form-inline">
+                <label class="sr-only" for="inputEmail">Email</label>
+                <input type="email" name="email" class="form-control w-100" id="inputEmail" placeholder="Email" required="">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="inputMessage">Message</label>
+                <textarea name="message" class="form-control" id="inputMessage" rows="5" placeholder="Message" required=""></textarea>
+              </div>
+              <button type="submit" class="btn btn-outline-primary px-3 py-2">Send</button>
+            </form>
+          </div>
+
+
+          <ul class="fa-ul">
+
+            <li class="contact-element" style="padding: 20px 10px">
+              <i class="fa-li fas fa-phone fa-2x" aria-hidden="true"></i>
+              <span id="person-telephone"><a href="tel:+91%2082198-92080">+44 7826182173</a> and <a href="tel:+91%2082198-92080">+91 7696808023</a></span>
+            </li>
+
+            <li class="contact-element" style="padding: 20px 10px">
+              <i class="fa-li fas fa-compass fa-2x" aria-hidden="true"></i>
+              <span>63 A, Knoll Court, Tower Street, Newcastle Upon Tyne, UK - NE1 2HW</span>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+
+      <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+
+  </section>
+
+  <!-- Footer -->
+
+  <section id="footer">
+
+    <footer class="bottom-container">
+
+       <p class="copyright"> © 2022 Sharanya Nath</p>
+    </footer>
+
+  </section>
+
+</body>
+
+</html>
